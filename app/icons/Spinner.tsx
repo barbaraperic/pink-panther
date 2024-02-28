@@ -4,7 +4,7 @@ export default function SpinnerIcon(props: any) {
             height="100%"
             strokeMiterlimit="10"
             version="1.1"
-            viewBox="372.334 190.618 39.9996 38.3432"
+            viewBox="369.408 187.693 45.8506 44.1942"
             width="100%"
             xmlns="http://www.w3.org/2000/svg"
             {...props}
@@ -25,10 +25,10 @@ export default function SpinnerIcon(props: any) {
             </defs>
             <clipPath id="ArtboardFrame">
                 <rect
-                    height="38.3432"
-                    width="39.9996"
-                    x="372.334"
-                    y="190.618"
+                    height="44.1942"
+                    width="45.8506"
+                    x="369.408"
+                    y="187.693"
                 />
             </clipPath>
             <g clipPath="url(#ArtboardFrame)" id="Layer">
@@ -38,7 +38,10 @@ export default function SpinnerIcon(props: any) {
                         fill="url(#LinearGradient)"
                         fillRule="nonzero"
                         opacity="1"
-                        stroke="none"
+                        stroke="#ff92df"
+                        strokeLinecap="butt"
+                        strokeLinejoin="round"
+                        strokeWidth="5.85099"
                     />
                 </g>
             </g>

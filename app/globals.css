@@ -17,6 +17,7 @@
         -0.3px 3.3px 3.7px -1.8px rgba(var(--shadow-color-rgb), var(--opacity)),
         -0.5px 5px 5.7px -2.1px rgba(var(--shadow-color-rgb), var(--opacity)),
         -0.7px 7.3px 8.3px -2.5px rgba(var(--shadow-color-rgb), var(--opacity));
+    --pink-rgb: 255, 145, 223;
 }
 
 @media (prefers-color-scheme: dark) {

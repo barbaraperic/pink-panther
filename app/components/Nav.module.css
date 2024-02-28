@@ -26,9 +26,10 @@
     margin-bottom: 0;
 }
 
-.node:hover {
+.node:hover,
+.node:active {
     transform: scale(1.2);
-    background-color: rgb(135, 140, 130);
+    background-color: rgb(var(--pink-rgb));
 }
 
 .line {
