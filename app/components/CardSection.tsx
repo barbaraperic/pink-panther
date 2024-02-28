@@ -14,7 +14,10 @@ export default function CardSection({
     return (
         <section id={id} className={styles.section}>
             <div className={styles.number}>{number}</div>
-            <h2 className={styles.title}>{title}</h2>
+            <div className={styles.card}>
+                <h2 className={styles.title}>{title}</h2>
+                {text}
+            </div>
             <div className={styles.card}>{text}</div>
         </section>
     )
