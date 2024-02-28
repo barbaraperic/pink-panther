@@ -24,13 +24,13 @@ export default function useAnimateScroll(
                     trigger: triggerId,
                     start: '50% 50%',
                     endTrigger: endTriggerId,
-                    end: 'bottom 50%',
+                    end: 'bottom',
                 },
             })
 
             spinnerId &&
                 tl.to(spinnerId, {
-                    rotateZ: 900,
+                    rotateZ: 1000,
                 })
         }, scrollPageElement) // Scope selector
         return () => ctx.revert() // cleanup

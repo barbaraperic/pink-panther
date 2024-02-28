@@ -50,5 +50,7 @@ body {
     position: fixed;
     width: 40px;
     height: 40px;
-    top: 50%;
+    top: 76%;
+    right: 10.5%;
+    z-index: 50000;
 }
