@@ -1,0 +1,38 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 10%;
+    top: 22%;
+    align-items: center;
+}
+
+.node {
+    width: 16px;
+    height: 16px;
+    margin-bottom: 100px;
+    border-radius: 50%;
+    background-color: rgb(var(--foreground-rgb));
+    transition: all 0.5s ease;
+}
+
+.node:last-child {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: rgb(var(--foreground-rgb));
+    margin-bottom: 0;
+}
+
+.node:hover {
+    transform: scale(1.2);
+    background-color: rgb(135, 140, 130);
+}
+
+.line {
+    position: absolute;
+    height: 100%;
+    background-color: rgb(var(--foreground-rgb));
+    width: 2px;
+    right: 48%;
+}
