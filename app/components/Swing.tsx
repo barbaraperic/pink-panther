@@ -21,15 +21,52 @@ export default function SwingComponent() {
 
             tl.add('move')
 
+            // tl.to(
+            //     '#swing',
+            //     {
+            //         duration: 10,
+            //         rotation: '-30deg',
+            //         transformOrigin: transformOriginValue,
+            //         ease: 'elastic.out( 3, 0.1)',
+            //         repeat: -1,
+            //         delay: 2,
+            //     },
+            //     'move'
+            // )
+
+            // // shows the radius of the arc
+            // tl.to(
+            //     '#circle',
+            //     {
+            //         duration: 10,
+            //         rotation: '-30deg',
+            //         transformOrigin: '50% 0px',
+            //         ease: 'elastic.out( 3, 0.1)',
+            //         delay: 2,
+            //         repeat: -1,
+            //     },
+            //     'move'
+            // )
+
             tl.to(
                 '#swing',
                 {
-                    duration: 10,
-                    rotation: '-30deg',
+                    duration: 5, // Adjust duration as needed
+                    rotation: '30deg', // Rotate to 30 degrees
                     transformOrigin: transformOriginValue,
-                    ease: 'elastic.out( 3, 0.1)',
-                    repeat: -1,
-                    delay: 2,
+                    ease: 'elastic.out(3, 0.1)',
+                },
+                'move'
+            )
+
+            // Revert to 0 degrees
+            tl.to(
+                '#swing',
+                {
+                    duration: 5, // Adjust duration as needed
+                    rotation: '0deg', // Rotate back to 0 degrees
+                    transformOrigin: transformOriginValue,
+                    ease: 'elastic.out(3, 0.1)',
                 },
                 'move'
             )
@@ -38,12 +75,22 @@ export default function SwingComponent() {
             tl.to(
                 '#circle',
                 {
-                    duration: 10,
-                    rotation: '-30deg',
+                    duration: 5, // Adjust duration as needed
+                    rotation: '30deg', // Rotate to 30 degrees
                     transformOrigin: '50% 0px',
-                    ease: 'elastic.out( 3, 0.1)',
-                    delay: 2,
-                    repeat: -1,
+                    ease: 'elastic.out(3, 0.1)',
+                },
+                'move'
+            )
+
+            // Revert to 0 degrees
+            tl.to(
+                '#circle',
+                {
+                    duration: 5, // Adjust duration as needed
+                    rotation: '0deg', // Rotate back to 0 degrees
+                    transformOrigin: '50% 0px',
+                    ease: 'elastic.out(3, 0.1)',
                 },
                 'move'
             )
