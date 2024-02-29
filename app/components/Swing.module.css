@@ -1,11 +1,11 @@
 #container {
-    --radius: 30vh;
-    --top-position: 60vh;
     display: flex;
     justify-content: center;
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    --radius: 30vh;
+    --top-position: 60vh;
 }
 .circle {
     position: absolute;
@@ -30,8 +30,12 @@
 }
 
 .swing {
-    width: 100vw;
     height: 150vh;
-    background-color: teal;
+    min-width: 500vw;
+    width: 100vw;
     margin-top: calc(20px + var(--top-position));
+    background: teal;
+    color: white;
+    text-align: center;
+    z-index: 1;
 }

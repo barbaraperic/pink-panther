@@ -14,12 +14,9 @@ export default function SwingComponent() {
 
     useIsomorphicLayoutEffect(() => {
         const swingRadius = gsap.getProperty(container.current, '--radius')
-
-        console.log(swingRadius)
         const transformOriginValue = '50% -' + swingRadius + 'vh'
-        let ctx = gsap.context(() => {
-            // gets the radius var from CSS... useful for this example's flexability.
 
+        let ctx = gsap.context(() => {
             const tl = gsap.timeline({})
 
             tl.add('move')
@@ -50,6 +47,7 @@ export default function SwingComponent() {
                 },
                 'move'
             )
+
             return () => ctx.revert()
         })
     }, [])
