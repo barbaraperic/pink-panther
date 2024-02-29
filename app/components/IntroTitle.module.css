@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'dTJakobVariable';
+    src: url('https://yoksel.github.io/variable-fonts/assets/fonts/dT_Jakob_VariableConcept/dTJakobVariableConceptGX.ttf')
+        format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.title {
+    position: relative;
+    z-index: 1;
+    font-feature-settings: 'liga' 0, 'dlig' 0, 'calt' 1;
+    font-variation-settings: 'wght' 40;
+    font-size: 150px;
+    font-family: 'dTJakobVariable';
+}
+
+.title::before,
+.title::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: all 0.25s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-name: color;
+}
+
+.title::before {
+    font-feature-settings: 'liga' 1, 'dlig' 0, 'calt' 0;
+    animation-duration: 7s;
+    color: #fecef1;
+}
+
+.title:hover::before {
+    top: -90%;
+}
+
+.title::after {
+    z-index: -1;
+    font-feature-settings: 'liga' 0, 'dlig' 1, 'calt' 0;
+    color: rgb(var(--pink-rgb));
+}
+
+.title:hover::after {
+    top: 90%;
+}

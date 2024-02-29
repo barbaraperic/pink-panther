@@ -31,11 +31,12 @@
 
 .swing {
     height: 150vh;
-    min-width: 500vw;
+    min-width: 300vw;
     width: 100vw;
     margin-top: calc(20px + var(--top-position));
-    background: teal;
+    /* background: teal; */
     color: white;
     text-align: center;
     z-index: 1;
+    background-image: linear-gradient(to right, red, yellow);
 }
