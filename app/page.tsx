@@ -6,9 +6,7 @@ import NavComponent from './components/Nav'
 import SpinnerIcon from './icons/Spinner'
 import useAnimateScroll from '@/hooks/useAnimateScroll'
 import IntroTitleComponent from './components/IntroTitle'
-import Image from 'next/image'
-import test from './test.svg'
-import SwingComponent from './components/Swing'
+import BackgroundLayoutComponent from './components/BackgroundLayout'
 
 export default function Home() {
     const scrollPage = useRef(null)
@@ -22,6 +20,8 @@ export default function Home() {
 
     return (
         <main ref={scrollPage} className="homepage-container" id="pin-windmill">
+            <BackgroundLayoutComponent />
+
             <div className="h-20 my-10">
                 <IntroTitleComponent />
             </div>
@@ -29,7 +29,6 @@ export default function Home() {
             <CardSectionList />
             <SpinnerIcon className="spinner-svg" id="pin-windmill-svg" />
             <div id="pin-windmill-wrap"></div>
-            {/* <SwingComponent /> */}
         </main>
     )
 }

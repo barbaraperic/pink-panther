@@ -43,7 +43,6 @@ body {
 
 .homepage-container {
     padding: 5%;
-    /* padding-top: 15%; */
     position: relative;
 }
 
@@ -51,7 +50,7 @@ body {
     position: fixed;
     width: 40px;
     height: 40px;
-    top: 68.2%;
+    top: 10%;
     right: 10.5%;
     z-index: 50000;
 }
