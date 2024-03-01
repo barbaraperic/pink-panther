@@ -11,8 +11,9 @@
     z-index: 1;
     font-feature-settings: 'liga' 0, 'dlig' 0, 'calt' 1;
     font-variation-settings: 'wght' 40;
-    font-size: 150px;
+    /* font-size: 150px; */
     font-family: 'dTJakobVariable';
+    cursor: pointer;
 }
 
 .title::before,
@@ -30,7 +31,7 @@
 }
 
 .title::before {
-    font-feature-settings: 'liga' 1, 'dlig' 0, 'calt' 0;
+    font-feature-settings: 'liga' 1, 'dlig' 1, 'calt' 0;
     animation-duration: 7s;
     color: #fecef1;
 }

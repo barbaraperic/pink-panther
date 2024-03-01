@@ -1,7 +1,7 @@
 import { ReactRef } from '@gsap/react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { useEffect, useLayoutEffect } from 'react'
+import { useIsomorphicLayoutEffect } from './useIsomorphicLayoutEffect'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -11,10 +11,6 @@ export default function useAnimateScroll(
     scrollPageElement: ReactRef,
     spinnerId?: string
 ) {
-    // Solves both SSR and CSR switching context issues
-    const useIsomorphicLayoutEffect =
-        typeof window !== 'undefined' ? useLayoutEffect : useEffect
-
     useIsomorphicLayoutEffect(() => {
         let ctx = gsap.context(() => {
             const tl = gsap.timeline({
