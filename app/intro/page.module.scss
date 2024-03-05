@@ -1,0 +1,20 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.title {
+    height: 3vh;
+    position: absolute;
+    top: 10rem;
+    left: 2rem;
+}
+
+.illustration-grey {
+    height: 32rem;
+    position: absolute;
+    bottom: -5rem;
+    left: -5rem;
+    filter: grayscale(1);
+}

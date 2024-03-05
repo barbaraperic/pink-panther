@@ -20,11 +20,6 @@ export default function Home() {
 
     return (
         <main ref={scrollPage} className="homepage-container" id="pin-windmill">
-            <BackgroundLayoutComponent />
-
-            <div className="h-20 my-10">
-                <IntroTitleComponent />
-            </div>
             <NavComponent />
             <CardSectionList />
             <SpinnerIcon className="spinner-svg" id="pin-windmill-svg" />
