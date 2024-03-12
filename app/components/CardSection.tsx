@@ -46,11 +46,16 @@ export default function CardSection({
             <div className={styles.number} ref={box} id="number">
                 {number}
             </div>
-            <div className={styles.card} id="card">
-                <h2 className={styles.title}>{title}</h2>
+            <h2 className={styles.title}>{title}</h2>
+            <div
+                className={`${styles.card} ${styles['paragraph-a']}`}
+                id="card"
+            >
                 {text}
             </div>
-            <div className={styles.card}>{text}</div>
+            <div className={`${styles.card} ${styles['paragraph-b']}`}>
+                {text}
+            </div>
         </section>
     )
 }

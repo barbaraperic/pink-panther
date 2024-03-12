@@ -1,33 +1,35 @@
 .section {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 100px;
-    align-items: center;
-    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 10rem;
 }
 
 .card {
-    max-width: 600px;
-    padding: 24px;
-    padding-top: 62px;
     border-radius: 8px;
     box-shadow: var(--shadow-elevation-high);
-    margin-bottom: 40px;
     position: relative;
+}
+
+.paragraph-a {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
+
+.paragraph-b {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
 }
 
 .number {
     font-size: 60px;
+    grid-column: 1/2;
+    grid-row: 2/4;
     transform: rotate(270deg);
-    position: absolute;
-    left: 6%;
-    top: 15%;
+    text-align: center;
 }
 
 .title {
     font-size: 52px;
-    position: absolute;
-    left: -11%;
-    top: -26%;
     text-transform: uppercase;
+    grid-column: 1 / 5;
 }

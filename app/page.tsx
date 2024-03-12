@@ -7,6 +7,7 @@ import SpinnerIcon from './icons/Spinner'
 import useAnimateScroll from '@/hooks/useAnimateScroll'
 import IntroTitleComponent from './components/IntroTitle'
 import BackgroundLayoutComponent from './components/BackgroundLayout'
+import styles from './homepage.module.css'
 
 export default function Home() {
     const scrollPage = useRef(null)
@@ -19,11 +20,16 @@ export default function Home() {
     )
 
     return (
-        <main ref={scrollPage} className="homepage-container" id="pin-windmill">
-            <NavComponent />
-            <CardSectionList />
-            <SpinnerIcon className="spinner-svg" id="pin-windmill-svg" />
-            <div id="pin-windmill-wrap"></div>
-        </main>
+        <div className={styles.container}>
+            <main ref={scrollPage} className={styles.wrapper} id="pin-windmill">
+                <NavComponent />
+                <CardSectionList />
+                <SpinnerIcon
+                    className={styles['spinner-svg']}
+                    id="pin-windmill-svg"
+                />
+                <div id="pin-windmill-wrap"></div>
+            </main>
+        </div>
     )
 }
