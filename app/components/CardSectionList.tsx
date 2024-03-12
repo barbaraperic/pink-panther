@@ -23,7 +23,7 @@ export default function CardSectionList() {
     ]
 
     return (
-        <div>
+        <>
             {sectionList.map((section) => (
                 <CardSection
                     key={section.id}
@@ -33,6 +33,6 @@ export default function CardSectionList() {
                     text={section.text}
                 />
             ))}
-        </div>
+        </>
     )
 }

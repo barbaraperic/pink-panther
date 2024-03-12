@@ -1,7 +1,6 @@
 .container {
     width: 100vw;
     height: 100vh;
-    display: flex;
 }
 
 .title {
@@ -17,12 +16,6 @@
     bottom: 0;
     left: -5rem;
     filter: grayscale(1);
-}
-
-.wrapper {
-    padding: 5%;
-    position: relative;
-    margin: 0 auto;
 }
 
 .spinner-svg {

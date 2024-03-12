@@ -21,6 +21,7 @@ export default function CardSection({
 }) {
     const box = useRef(null)
     useIsomorphicLayoutEffect(() => {
+        console.log(box)
         if (box) {
             gsap.to(box.current, {
                 scale: 1.5,
@@ -28,8 +29,8 @@ export default function CardSection({
                 scrollTrigger: {
                     scrub: 1,
                     trigger: box.current,
-                    start: 'center center',
-                    end: 'bottom top',
+                    start: 'bottom bottom',
+                    end: 'top top',
                 },
             })
         }

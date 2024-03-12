@@ -1,13 +1,16 @@
 .section {
+    width: 900px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 10rem;
+    gap: 2rem;
 }
 
 .card {
     border-radius: 8px;
     box-shadow: var(--shadow-elevation-high);
     position: relative;
+    padding: 1rem;
 }
 
 .paragraph-a {
@@ -24,8 +27,11 @@
     font-size: 60px;
     grid-column: 1/2;
     grid-row: 2/4;
-    transform: rotate(270deg);
+    transform: rotate(-90deg);
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .title {
