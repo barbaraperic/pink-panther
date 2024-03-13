@@ -41,10 +41,9 @@
 
 @media (min-width: 800px) {
     .section {
-        /* width: 900px; */
+        width: 600px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        margin-bottom: 10rem;
         gap: 2rem;
     }
     .paragraph-a {
@@ -61,7 +60,7 @@
         font-size: 60px;
         grid-column: 1/2;
         grid-row: 2/4;
-        /* transform: rotate(-90deg); */
+        transform: rotate(-90deg);
         text-align: center;
         display: flex;
         justify-content: center;
@@ -71,6 +70,6 @@
     .title {
         font-size: 52px;
         text-transform: uppercase;
-        /* grid-column: 1 / 5; */
+        grid-column: 1 / 5;
     }
 }

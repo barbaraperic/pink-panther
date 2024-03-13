@@ -21,7 +21,7 @@ export default function Home() {
 
     return (
         <div className={styles.container} ref={scrollPage} id="pin-windmill">
-            {/* <NavComponent /> */}
+            <NavComponent />
             <CardSectionList />
             {/* <SpinnerIcon
                 className={styles['spinner-svg']}

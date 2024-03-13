@@ -1,0 +1,6 @@
+@media (min-width: 800px) {
+    .section-wrapper {
+        position: relative;
+        right: 20%;
+    }
+}

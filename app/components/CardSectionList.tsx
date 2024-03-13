@@ -1,4 +1,5 @@
 import CardSection from './CardSection'
+import styles from './CardSectionList.module.css'
 
 export default function CardSectionList() {
     const sectionList = [
@@ -23,7 +24,7 @@ export default function CardSectionList() {
     ]
 
     return (
-        <div>
+        <div className={styles['section-wrapper']}>
             {sectionList.map((section) => (
                 <CardSection
                     key={section.id}

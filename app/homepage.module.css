@@ -3,7 +3,8 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    margin: 4rem auto;
+    margin: 0 auto;
+    margin-top: 4rem;
 }
 
 .title {
@@ -28,4 +29,11 @@
     top: 10%;
     right: 10.5%;
     z-index: 50000;
+}
+
+@media (min-width: 800px) {
+    .container {
+        width: 600px;
+        grid-template-columns: 1fr 1fr;
+    }
 }
