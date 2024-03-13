@@ -1,9 +1,10 @@
 .section {
-    width: 900px;
+    /* width: 900px; */
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr;
     margin-bottom: 10rem;
     gap: 2rem;
+    text-align: center;
 }
 
 .card {
@@ -13,29 +14,63 @@
     padding: 1rem;
 }
 
-.paragraph-a {
-    grid-column: 2 / 4;
-    grid-row: 2 / 3;
-}
-
-.paragraph-b {
-    grid-column: 2 / 4;
-    grid-row: 3 / 4;
-}
-
 .number {
-    font-size: 60px;
-    grid-column: 1/2;
-    grid-row: 2/4;
-    transform: rotate(-90deg);
-    text-align: center;
+    grid-column: 2/3;
+    font-size: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* transform: rotate(-90deg); */
 }
 
 .title {
-    font-size: 52px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    font-size: 3rem;
     text-transform: uppercase;
-    grid-column: 1 / 5;
+}
+
+.paragraph-a {
+    grid-column: 1 / 3;
+}
+
+.paragraph-b {
+    grid-column: 1 / 3;
+}
+
+@media (min-width: 800px) {
+    .section {
+        /* width: 900px; */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-bottom: 10rem;
+        gap: 2rem;
+    }
+    .paragraph-a {
+        grid-column: 2 / 5;
+        grid-row: 2 / 3;
+    }
+
+    .paragraph-b {
+        grid-column: 2 / 5;
+        grid-row: 3 / 4;
+    }
+
+    .number {
+        font-size: 60px;
+        grid-column: 1/2;
+        grid-row: 2/4;
+        /* transform: rotate(-90deg); */
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 52px;
+        text-transform: uppercase;
+        /* grid-column: 1 / 5; */
+    }
 }

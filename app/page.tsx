@@ -20,16 +20,14 @@ export default function Home() {
     )
 
     return (
-        <div className={styles.container}>
-            <main ref={scrollPage} className={styles.wrapper} id="pin-windmill">
-                <NavComponent />
-                <CardSectionList />
-                <SpinnerIcon
-                    className={styles['spinner-svg']}
-                    id="pin-windmill-svg"
-                />
-                <div id="pin-windmill-wrap"></div>
-            </main>
+        <div className={styles.container} ref={scrollPage} id="pin-windmill">
+            {/* <NavComponent /> */}
+            <CardSectionList />
+            {/* <SpinnerIcon
+                className={styles['spinner-svg']}
+                id="pin-windmill-svg"
+            /> */}
+            <div id="pin-windmill-wrap"></div>
         </div>
     )
 }
