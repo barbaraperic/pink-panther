@@ -41,7 +41,8 @@
 
 @media (min-width: 800px) {
     .section {
-        width: 600px;
+        min-width: 800px;
+        max-width: 1000px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 2rem;

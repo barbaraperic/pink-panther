@@ -32,8 +32,13 @@
 body {
     color: rgb(var(--foreground-rgb));
     width: 100vw;
-    height: 100vh;
-    background-image: url('./brick-wall.png');
+    min-height: 100vh;
+    background-image: url('./brick-wall.png'),
+        linear-gradient(
+            180deg,
+            rgba(255, 255, 0, 0) 22%,
+            rgba(0, 0, 0, 0.18) 100%
+        );
 }
 
 @layer utilities {

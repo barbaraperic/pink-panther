@@ -1,6 +1,23 @@
 .container {
-    width: 375px;
     height: 100vh;
+}
+
+.nav-element {
+    height: 5rem;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    margin: 0 auto;
+    backdrop-filter: blur(10px);
+    z-index: 20;
+    width: 100%;
+}
+
+.nav {
+}
+
+.main-grid {
+    width: 375px;
     display: grid;
     grid-template-columns: 1fr;
     margin: 0 auto;
@@ -9,9 +26,9 @@
 
 .title {
     height: 3vh;
-    position: absolute;
-    top: 10rem;
-    left: 2rem;
+    display: inline-block;
+    margin-bottom: 4rem;
+    padding: 2rem;
 }
 
 .illustration-grey {
@@ -32,7 +49,7 @@
 }
 
 @media (min-width: 800px) {
-    .container {
+    .main-grid {
         width: 600px;
         grid-template-columns: 1fr 1fr;
     }
