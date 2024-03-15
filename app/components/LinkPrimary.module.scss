@@ -1,0 +1,33 @@
+.linkwrapper {
+    position: relative;
+}
+
+.link {
+    cursor: pointer;
+    box-shadow: 0 1px inset hsl(0 0% 100% / 0.5), 0 -1px inset hsl(0 0% 30% / 5);
+    border-radius: 4px;
+    padding: 1rem 2rem;
+    background: linear-gradient(
+            rgba(255, 255, 255, 1) 0%,
+            rgba(251, 251, 251, 0.1) 100%
+        ),
+        linear-gradient(90deg, #84d2ff, rgb(var(--pink-rgb)));
+}
+
+.glow {
+    position: absolute;
+    border: 1px solid orange;
+    offset-path: rect(0 100% 100% 0 round 4px);
+    inset: 4px;
+
+    &::after {
+        display: inline-block;
+        content: '';
+        height: 6rem;
+        aspect-ratio: 1 / 1;
+        background: white;
+    }
+}
+
+.content {
+}

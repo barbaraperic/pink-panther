@@ -11,7 +11,7 @@
     z-index: 1;
     font-feature-settings: 'liga' 0, 'dlig' 0, 'calt' 1;
     font-variation-settings: 'wght' 40;
-    font-size: clamp(1.3rem, 4vw, 4rem);
+    font-size: clamp(3rem, 6vw, 6rem);
     font-family: 'dTJakobVariable';
     cursor: pointer;
 }
