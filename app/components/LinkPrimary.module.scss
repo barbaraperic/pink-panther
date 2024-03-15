@@ -26,11 +26,28 @@
     &::after {
         display: inline-block;
         content: '';
-        height: 6rem;
+        height: calc(var(--glow) * 1px);
         aspect-ratio: 1 / 1;
         background: white;
         offset-path: rect(0 100% 100% 0 round 10px);
         offset-path: rect(0 100% 100% 0 round calc(var(--glow) * 1px));
+        background: radial-gradient(
+                circle at right,
+                hsl(0 0% 100% / 0.75),
+                transparent 50%
+            ),
+            radial-gradient(
+                circle at right,
+                hsl(30deg 100% 70% / 1) 50%,
+                transparent
+            );
+        animation: loop 2s linear infinite;
+    }
+}
+
+@keyframes loop {
+    to {
+        offset-distance: 100%;
     }
 }
 
