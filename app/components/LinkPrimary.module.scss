@@ -21,7 +21,11 @@
 .glow {
     inset: -2px;
     position: absolute;
-    border: 2px solid orange;
+    border: 2px solid transparent;
+    mask: linear-gradient(transparent, transparent),
+        linear-gradient(white, white);
+    mask-clip: padding-box, border-box;
+    mask-composite: intersect;
 
     &::after {
         display: inline-block;
@@ -29,7 +33,7 @@
         height: calc(var(--glow) * 1px);
         aspect-ratio: 1 / 1;
         background: white;
-        offset-path: rect(0 100% 100% 0 round 10px);
+        offset-path: rect(0 100% 100% 0 round 16px);
         offset-path: rect(0 100% 100% 0 round calc(var(--glow) * 1px));
         background: radial-gradient(
                 circle at right,
@@ -38,10 +42,10 @@
             ),
             radial-gradient(
                 circle at right,
-                hsl(30deg 100% 70% / 1) 50%,
+                hsl(320deg 100% 70% / 1) 50%,
                 transparent
             );
-        animation: loop 2s linear infinite;
+        animation: loop 4s linear infinite;
     }
 }
 
