@@ -8,19 +8,19 @@
     position: relative;
     scale: 1;
     cursor: pointer;
-    box-shadow: 0 1px inset hsl(0 0% 100% / 0.5), 0 -1px inset hsl(0 0% 30% / 5);
     border-radius: 4px;
     padding: 1rem 2rem;
     background: linear-gradient(
             rgba(255, 255, 255, 1) 0%,
             rgba(251, 251, 251, 0.1) 100%
         ),
-        linear-gradient(90deg, #84d2ff, rgb(var(--pink-rgb)));
+        linear-gradient(180deg, transparent, hsl(0 0% 100% / 0.5));
 }
 
 .glow {
     inset: -2px;
     position: absolute;
+    border-radius: 8px;
     border: 2px solid transparent;
     mask: linear-gradient(transparent, transparent),
         linear-gradient(white, white);
@@ -28,6 +28,7 @@
     mask-composite: intersect;
 
     &::after {
+        border-radius: 4px;
         display: inline-block;
         content: '';
         height: calc(var(--glow) * 1px);
@@ -40,11 +41,8 @@
                 hsl(0 0% 100% / 0.75),
                 transparent 50%
             ),
-            radial-gradient(
-                circle at right,
-                hsl(320deg 100% 70% / 1) 50%,
-                transparent
-            );
+            radial-gradient(circle at right, hsl(120, 80%, 6%) 50%, transparent);
+
         animation: loop 4s linear infinite;
     }
 }
